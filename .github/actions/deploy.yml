@@ -2,8 +2,9 @@ name: Deploy Website
 
 on:
   push:
-    branches: [ main ]
-
+    branches: [ main ]        # Fix 1: Correct branch name
+  workflow_dispatch: 
+ 
 jobs:
   deploy:
     runs-on: ubuntu-latest
